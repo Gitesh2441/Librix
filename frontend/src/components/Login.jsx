@@ -8,10 +8,10 @@ import { login } from "../Store/authSlice";
 import { TextField } from "@mui/material";
 function Login() {
   const dispatch = useDispatch();
-  const [username, setUsername] = useState("sameer");
-  const [adminId, setAdminId] = useState(12);
-  const [email, setEmail] = useState("sameer@gmail.com");
-  const [number, setNumber] = useState(8059050407);
+  const [username, setUsername] = useState("");
+  const [adminId, setAdminId] = useState(null);
+  const [email, setEmail] = useState("");
+  const [number, setNumber] = useState(null);
   const [err, setErr] = useState("");
 
   const navigate = useNavigate();
