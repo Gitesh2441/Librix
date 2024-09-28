@@ -54,20 +54,20 @@ function Login() {
             variant="outlined"
             label="Username"
             type="text"
-            value="sameer"
+            value={username}
             onChange={(e) => setUsername(e.currentTarget.value)}
           />
           <TextField
             variant="outlined"
             label="Admin Id"
             type="number"
-            value={12}
+            value={adminId}
             onChange={(e) => setAdminId(e.currentTarget.value)}
           />
           <TextField
             variant="outlined"
             label="Email"
-            value="sameer@gmail.com"
+            value={email}
             type="email"
             onChange={(e) => setEmail(e.currentTarget.value)}
           />
@@ -75,7 +75,7 @@ function Login() {
             variant="outlined"
             label="Mobile Number"
             type="number"
-            value={8059050407}
+            value={number}
             onChange={(e) => setNumber(e.currentTarget.value)}
           />
           <button
